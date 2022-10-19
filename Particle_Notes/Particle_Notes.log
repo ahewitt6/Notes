@@ -1,0 +1,734 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.5.8)  19 OCT 2022 08:08
+entering extended mode
+ restricted \write18 enabled.
+ file:line:error style messages enabled.
+ %&-line parsing enabled.
+**Particle_Notes.tex
+(./Particle_Notes.tex
+LaTeX2e <2018-12-01>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amscls/amsart.cls
+Document Class: amsart 2017/10/31 v2.20.4
+\linespacing=\dimen102
+\normalparindent=\dimen103
+\normaltopskip=\skip41
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2018/12/01 v2.17b AMS math features
+\@mathmargin=\skip42
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen104
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen105
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count80
+LaTeX Info: Redefining \frac on input line 223.
+\uproot@=\count81
+\leftroot@=\count82
+LaTeX Info: Redefining \overline on input line 385.
+\classnum@=\count83
+\DOTSCASE@=\count84
+LaTeX Info: Redefining \ldots on input line 482.
+LaTeX Info: Redefining \dots on input line 485.
+LaTeX Info: Redefining \cdots on input line 606.
+\Mathstrutbox@=\box27
+\strutbox@=\box28
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 729.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 730.
+\macc@depth=\count85
+\c@MaxMatrixCols=\count86
+\dotsspace@=\muskip10
+\c@parentequation=\count87
+\dspbrk@lvl=\count88
+\tag@help=\toks15
+\row@=\count89
+\column@=\count90
+\maxfields@=\count91
+\andhelp@=\toks16
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks17
+\multlinegap=\skip43
+\multlinetaggap=\skip44
+\mathdisplay@stack=\toks18
+LaTeX Info: Redefining \[ on input line 2844.
+LaTeX Info: Redefining \] on input line 2845.
+)
+LaTeX Font Info:    Try loading font information for U+msa on input line 398.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+\copyins=\insert199
+\abstractbox=\box29
+\listisep=\skip45
+\c@part=\count92
+\c@section=\count93
+\c@subsection=\count94
+\c@subsubsection=\count95
+\c@paragraph=\count96
+\c@subparagraph=\count97
+\c@figure=\count98
+\c@table=\count99
+\abovecaptionskip=\skip46
+\belowcaptionskip=\skip47
+\captionindent=\dimen113
+\thm@style=\toks19
+\thm@bodyfont=\toks20
+\thm@headfont=\toks21
+\thm@notefont=\toks22
+\thm@headpunct=\toks23
+\thm@preskip=\skip48
+\thm@postskip=\skip49
+\thm@headsep=\skip50
+\dth@everypar=\toks24
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/enumerate.sty
+Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
+\@enLab=\toks25
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mathtools.sty
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks26
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count100
+\calc@Bcount=\count101
+\calc@Adimen=\dimen114
+\calc@Bdimen=\dimen115
+\calc@Askip=\skip51
+\calc@Bskip=\skip52
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count102
+\calc@Cskip=\skip53
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/mathtools/mhsetup.sty
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
+)
+LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
+LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
+\g_MT_multlinerow_int=\count103
+\l_MT_multwidth_dim=\dimen116
+\origjot=\skip54
+\l_MT_shortvdotswithinadjustabove_dim=\dimen117
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen118
+\l_MT_above_intertext_sep=\dimen119
+\l_MT_below_intertext_sep=\dimen120
+\l_MT_above_shortintertext_sep=\dimen121
+\l_MT_below_shortintertext_sep=\dimen122
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/comment/comment.sty
+\CommentStream=\write3
+
+Excluding comment 'comment')
+(/usr/local/texlive/2019/texmf-dist/tex/latex/arydshln/arydshln.sty
+Package: arydshln 2019/02/21 v1.76 
+\dashlinedash=\dimen123
+\dashlinegap=\dimen124
+\adl@box=\box30
+\adl@height=\dimen125
+\adl@heightsave=\dimen126
+\adl@depth=\dimen127
+\adl@depthsave=\dimen128
+\adl@finaldepth=\dimen129
+\adl@columns=\count104
+\adl@ncol=\count105
+\adl@currentcolumn=\count106
+\adl@currentcolumnsave=\count107
+\adl@totalheight=\count108
+\adl@totalheightsave=\count109
+\adl@dash=\count110
+\adl@gap=\count111
+\adl@cla=\count112
+\adl@clb=\count113
+\adl@everyvbox=\toks27
+\adl@LTpagetotal=\dimen130
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/dashrule/dashrule.sty
+Package: dashrule 2013/03/28 v1.3 Dashed rules
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/ifmtarg/ifmtarg.sty
+Package: ifmtarg 2018/04/16 v1.2b check for an empty argument
+)
+\c@hdr@segments=\count114
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/carlisle/slashed.sty
+Package: slashed 1997/01/16 v0.01 Feynman Slashed Character Notation (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
+\symrsfs=\mathgroup6
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/fundus-calligra/calligra.sty
+Package: calligra 2012/04/10 v1.9 LaTeX package calligra
+)
+(./Particle_Notes.aux)
+\openout1 = `Particle_Notes.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 19.
+LaTeX Font Info:    ... okay on input line 19.
+LaTeX Font Info:    Try loading font information for U+msa on input line 19.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 19.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 19.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/jknapltx/ursfs.fd
+File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count115
+\scratchdimen=\dimen131
+\scratchbox=\box31
+\nofMPsegments=\count116
+\nofMParguments=\count117
+\everyMPshowfont=\toks28
+\MPscratchCnt=\count118
+\MPscratchDim=\dimen132
+\MPnumerator=\count119
+\makeMPintoPDFobject=\count120
+\everyMPtoPDFconversion=\toks29
+))) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+))))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\Gin@req@height=\dimen133
+\Gin@req@width=\dimen134
+)
+Overfull \hbox (49.88881pt too wide) in paragraph at lines 30--37
+[][]\OML/cmm/m/it/12  [] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 i []^^M[]^^M[]@[] [
+] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 i []O[]^^M[]^^M[]@[]O [] \OT1/cmr/m/n/12 =
+ \OML/cmm/m/it/12 i []O[]^^M[]OO[]^^M[]O@[] [][] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 39--40
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--50
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 52--53
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 55--65
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [1{/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 69--70
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 75--76
+[][] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 87--88
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 90--94
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 96--97
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--102
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 104--105
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 110--111
+[][] [] 
+ []
+
+
+Overfull \hbox (83.71704pt too wide) in paragraph at lines 113--120
+[]$[]$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [2]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 122--123
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--132
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 134--135
+[][] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 150--151
+[][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 181--182
+[][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 196--197
+[][] [] 
+ []
+
+
+Overfull \hbox (47.8889pt too wide) in paragraph at lines 199--212
+[]$[]$ 
+ []
+
+
+Overfull \hbox (24.02434pt too wide) in paragraph at lines 222--227
+[]$\OMS/cmsy/m/n/12 L[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@[]\OML/cmm/m/it/1
+2 G[]G[] \OMS/cmsy/m/n/12 ^^@ []\OML/cmm/m/it/12 W[]W[] \OMS/cmsy/m/n/12 ^^@ []
+\OML/cmm/m/it/12 B[]B[] \OMS/cmsy/m/n/12 ^^@ []\OML/cmm/m/it/12 ^^O[]G[]G[] \OM
+S/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 228--229
+[][] [] 
+ []
+
+
+Overfull \hbox (42.27196pt too wide) in paragraph at lines 231--236
+\OT1/cmr/m/n/12 Use $\OML/cmm/m/it/12 SU\OT1/cmr/m/n/12 (2)$ sym-me-try to ro-t
+ate $\OML/cmm/m/it/12 ^^^$ \OT1/cmr/m/n/12 so that $\OML/cmm/m/it/12 ^^^ \OT1/c
+mr/m/n/12 = [] \OML/cmm/m/it/12 v; H\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 x\OT1/cmr
+/m/n/12 ) \OMS/cmsy/m/n/12 2
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 231--236
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 238--239
+[][] [] 
+ []
+
+[5]
+Overfull \hbox (296.82907pt too wide) in paragraph at lines 241--259
+[]$[]$ 
+ []
+
+
+Overfull \hbox (58.35341pt too wide) in paragraph at lines 241--259
+\OT1/cmr/m/n/12 =[]\OMS/cmsy/m/n/12 )  \OML/cmm/m/it/12 D[]^^^ \OT1/cmr/m/n/12 
+= [] [] \OMS/cmsy/m/n/12 ^^@ [] [] [] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 241--259
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 261--262
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 264--272
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 274--275
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--283
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 284--285
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 287--294
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 296--297
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 299--305
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 307--308
+[][] [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 310--316
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 318--319
+[][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 336--337
+[][] [] 
+ []
+
+
+Overfull \hbox (64.14372pt too wide) in paragraph at lines 339--355
+[]$[]$ $[]$ 
+ []
+
+
+Overfull \hbox (16.86285pt too wide) in paragraph at lines 339--355
+\OMS/cmsy/m/n/12 ^^@ \OT1/cmr/m/n/12 (\OML/cmm/m/it/12 f[][]P[]E[]^^^ \OT1/cmr/
+m/n/12 + \OML/cmm/m/it/12 h[][]P[]D[]^^^ \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 g[]
+[]P[]U[][] \OT1/cmr/m/n/12 + \OML/cmm/m/it/12 h:c:\OT1/cmr/m/n/12 );   \OML/cmm
+/m/it/12 V\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 ^^^[]^^^\OT1/cmr/m/n/12 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 339--355
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 357--358
+[][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [8]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 369--370
+[][] [] 
+ []
+
+
+Overfull \hbox (69.09839pt too wide) in paragraph at lines 372--392
+\OT1/cmr/m/n/12 =[]\OMS/cmsy/m/n/12 )  [] \OML/cmm/m/it/12 P[]\OMS/cmsy/m/n/12 
+U[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 U[]P[]\OMS/cmsy/m/n/12 U[]\OML/cmm/m/it/
+12 ;   P[]U[] \OT1/cmr/m/n/12 =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 372--392
+
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 394--395
+[][] [] 
+ []
+
+
+Overfull \hbox (214.18764pt too wide) in paragraph at lines 397--406
+\OT1/cmr/m/n/12 = ([][]\OML/cmm/m/it/12 P[]\OMS/cmsy/m/n/12 E[][] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 408--409
+[][] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 425--426
+[][] [] 
+ []
+
+
+Overfull \hbox (48.55867pt too wide) in paragraph at lines 428--457
+[]$[]$ 
+ []
+
+
+Overfull \hbox (18.50049pt too wide) in paragraph at lines 428--457
+\OML/cmm/m/it/12 D[]Q[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12 @[]Q[] \OT1/cmr/m/n/
+12 + [\OMS/cmsy/m/n/12 ^^@[]\OML/cmm/m/it/12 g[]G[]^^U[] \OMS/cmsy/m/n/12 ^^@ [
+]\OML/cmm/m/it/12 g[]W[]^^\[] \OMS/cmsy/m/n/12 ^^@ []\OML/cmm/m/it/12 g[]B[]\OT
+1/cmr/m/n/12 ]\OML/cmm/m/it/12 P[]Q[] \OT1/cmr/m/n/12 + [[]\OML/cmm/m/it/12 g[]
+G[]^^U[] \OT1/cmr/m/n/12 +
+ []
+
+
+Overfull \hbox (31.84166pt too wide) in paragraph at lines 428--457
+[]$ $\OMS/cmsy/m/n/12 ^^@[]\OML/cmm/m/it/12 g[]W[]^^\[] \OMS/cmsy/m/n/12 ^^@ []
+\OML/cmm/m/it/12 g[]B[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@[] [] [] 
+ []
+
+
+Overfull \hbox (73.20003pt too wide) in paragraph at lines 428--457
+[] [] \OML/cmm/m/it/12 ^^M[]P[] [] [] \OT1/cmr/m/n/12 + []\OML/cmm/m/it/12 g[]B
+[][]^^M[]P[]U[] \OMS/cmsy/m/n/12 ^^@
+ []
+
+
+Overfull \hbox (55.89005pt too wide) in paragraph at lines 428--457
+\OT1/cmr/m/n/12 = []([]\OML/cmm/m/it/12 ^^M[]P[]W[]\OMS/cmsy/m/n/12 E[]\OT1/cmr
+/m/n/12 + \OMS/cmsy/m/n/12 ^^X \OT1/cmr/m/n/12 +[]\OML/cmm/m/it/12 ^^M[]P[]:W[]
+^^W[]\OT1/cmr/m/n/12 + \OMS/cmsy/m/n/12 ^^X\OT1/cmr/m/n/12 ) + []([]\OML/cmm/m/
+it/12 ^^M[]P[]W[]\OMS/cmsy/m/n/12 U[]\OT1/cmr/m/n/12 + \OMS/cmsy/m/n/12 ^^X
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 428--457
+
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 459--460
+[][] [] 
+ []
+
+
+Overfull \hbox (43.89636pt too wide) in paragraph at lines 462--477
+[]$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11]
+Overfull \hbox (12.0pt too wide) in paragraph at lines 479--480
+[][] [] 
+ []
+
+
+Overfull \hbox (12.0pt too wide) in paragraph at lines 486--487
+[][] [] 
+ []
+
+
+Overfull \hbox (17.6664pt too wide) in paragraph at lines 489--526
+\OMS/cmsy/m/n/12 L \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 L[]\OML/cmm/m/it/12 M \OT
+1/cmr/m/n/12 = \OMS/cmsy/m/n/12 ^^@[]\OML/cmm/m/it/12 A[][][]N[] \OMS/cmsy/m/n/
+12 ^^@ []\OML/cmm/m/it/12 M[][]N[] \OMS/cmsy/m/n/12 ^^@ []\OML/cmm/m/it/12 m[][
+]^^W[] \OMS/cmsy/m/n/12 ^^@ \OML/cmm/m/it/12 F[][]N[][][] 
+ []
+
+
+Overfull \hbox (10.25893pt too wide) in paragraph at lines 489--526
+\OT1/cmr/m/n/12 but $\OML/cmm/m/it/12 M[]v[] \OT1/cmr/m/n/12 = \OML/cmm/m/it/12
+ ^^U[]v[]$ \OT1/cmr/m/n/12 (not sure why) $ =[]\OMS/cmsy/m/n/12 )  [] \OML/cmm/
+m/it/12 diag\OT1/cmr/m/n/12 (\OML/cmm/m/it/12 m[]; m[]\OT1/cmr/m/n/12 ) [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12]
+[13] (./Particle_Notes.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 3695 strings out of 492616
+ 51270 string characters out of 6129482
+ 146057 words of memory out of 5000000
+ 7381 multiletter control sequences out of 15000+600000
+ 11880 words of font info for 49 fonts, out of 8000000 for 9000
+ 1302 hyphenation exceptions out of 8191
+ 55i,16n,31p,1075b,291s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pf
+b></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></us
+r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/
+local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/tex
+live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on Particle_Notes.pdf (13 pages, 202021 bytes).
+PDF statistics:
+ 99 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

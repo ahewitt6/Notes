@@ -1,0 +1,532 @@
+\documentclass[12pt]{amsart}
+
+\usepackage{enumerate,amsmath,amssymb,amsthm,mathtools,comment}
+
+\usepackage{arydshln}
+\usepackage{dashrule}
+\usepackage{slashed}
+\usepackage{mathrsfs}
+%for Griffiths curly r
+\usepackage{calligra}
+\DeclareMathAlphabet{\mathcalligra}{T1}{calligra}{m}{n}
+\DeclareFontShape{T1}{calligra}{m}{n}{<->s*[2.2]callig15}{}
+\newcommand{\scripty}[1]{\ensuremath{\mathcalligra{#1}}}
+
+
+
+\newcommand{\capk}{\frac{1}{4 \pi \mathcal{E}_0}}
+
+\begin{document}
+\title{}
+%\author{Alec Hewitt}
+\maketitle
+
+\setlength{\parindent}{0mm}
+
+
+\begin{enumerate}
+\setcounter{enumi}{947}
+
+\item \underline{$\bar{\psi}_D \slashed{\partial} \psi_D = \bar{\psi}_M \slashed{\partial} \psi_M$}\\
+$\bar{\psi}_D \slashed{\partial} \psi_D = i \psi_D^{\dagger} \gamma^0 \gamma^{\mu} \partial_{\mu} \psi_D = i \psi_M^{\dagger} O^{\dagger} \gamma^0  \gamma^{\mu}  \partial_{\mu} O \psi_M= i \psi_M^{\dagger} O^{\dagger} \gamma^0 O O^{\dagger} \gamma^{\mu} O \partial_{\mu} \psi_M\\
+= \psi_m^{\dagger} ( O^{\dagger} \gamma^0 O)( O^{\dagger} \gamma^{\mu} O) \partial_{\mu} \psi_M\\
+= \psi_M^{\dagger} \gamma_M^0 \gamma_M^{\mu} \partial_{\mu} \psi = \bar{\psi}_M \gamma_{M}^{\mu} \partial_{\mu} \psi_M = \bar{\psi}_M \slashed{\partial} \psi_M$\\
+$= i \psi_M^{\dagger} \gamma^0 O^{\dagger} \gamma^{\mu} O \partial_{\mu} \psi_m = i \bar{\psi}_M \gamma_M^{\mu} \partial_{\mu} \psi_M = \bar{\psi}_M \slashed{\partial} \psi_M$\\
+where $\gamma^{\mu}_M \equiv O^{\dagger} \gamma^{\mu} O\\$
+we assumed $O^{\dagger} O=1$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$ \bar{\psi} \psi = \bar{\psi}_L \psi_R + \bar{\psi}_R \psi_L$}\\
+$\bar{\psi} \psi = \psi^{\dagger} \gamma^0 \psi = \begin{pmatrix} \psi_L^* & \psi_R^* \end{pmatrix} \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix} \begin{pmatrix} \psi_L \\ \psi_R \end{pmatrix}\\
+= \begin{pmatrix} \psi_L^* & \psi_R^* \end{pmatrix} \begin{pmatrix} \psi_R \\ \psi_L \end{pmatrix} = \psi_L^* \psi_R + \psi_R^* \psi_L\\$
+define $\psi_R \equiv \begin{pmatrix} 0 \\ \psi_R \end{pmatrix},\,\, \psi_L \equiv \begin{pmatrix} \psi_L \\ 0 \end{pmatrix}\\
+\implies \bar{\psi} \psi = \psi_L^{\dagger} \begin{pmatrix} \psi_R \\ 0 \end{pmatrix} + \psi_R^* \begin{pmatrix} 0 \\ \psi_L \end{pmatrix}\\
+= \bar{\psi}_L \gamma^0 \begin{pmatrix} \psi_R \\ 0 \end{pmatrix} + \bar{\psi}_R \gamma^0 \begin{pmatrix} 0 \\ \psi_L \end{pmatrix}\\
+= \bar{\psi}_L \psi_R + \bar{\psi}_R \psi_L\\$
+where, $\gamma^5 = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$ e A_{\mu} \bar{\psi}_L \gamma^{\mu} \psi_L = e A_{\mu} \bar{\psi} \gamma^{\mu} ( \frac{1- \gamma_5}{2}) \psi$}\\
+$\psi_L = \frac{1- \gamma_5}{2} \psi = P_L \psi\\
+e A_{\mu} \bar{\psi}_L \gamma^{\mu} \psi_L = e A_{\mu} \bar{( \frac{1- \gamma_5}{2}) \psi} \gamma^{\mu} ( \frac{1- \gamma_5}{2}) \psi\\
+\bar{(\frac{1- \gamma_5}{2} \psi} = [ \frac{1- \gamma_5}{2} \psi]^{\dagger} \gamma^0 = \gamma^{\dagger} ( \frac{1- \gamma_5}{2}) \gamma^0\\
+= \bar{\psi} \frac{1 + \gamma_5}{2} ( using \gamma_5 \gamma^0 = - \gamma^0 \gamma^5)\\
+\implies e A_{\mu} \bar{\psi}_L \gamma^{\mu} \psi_L = e A_{\mu} \bar{\psi} \frac{1+ \gamma_5}{2} \gamma^{\mu} \frac{1- \gamma_5}{2} \psi\\
+= e A_{\mu} \bar{\psi} \gamma^{\mu} ( \frac{1-\gamma_5}{2})^2 \psi\\
+( \frac{1- \gamma_5}{2})^2 = \frac{1}{4} ( 1- \gamma_5)(1- \gamma_5) = \frac{1}{4} ( 2- 2 \gamma_5) = \frac{1- \gamma_5}{2}\\
+\gamma_5^2=1\\
+\therefore e A_{\mu} \bar{\psi}_L \gamma^{\mu} \psi_L = e A_{\mu} \bar{\psi} \gamma^{\mu} P_L \psi = e A_{\mu} \bar{\psi} \gamma^{\mu} \psi_L\\$
+
+useful for drawing Feynman diagrams since we know how Dirac spinors $\psi$ work
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+sterile neutrinos right now they have left and right handed components. i.e. $s_x = \begin{pmatrix} s_x^L \\ s_x^R \end{pmatrix},\,\, \nu_a = \begin{pmatrix} \nu_a^L \\ \nu_a^R \end{pmatrix}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\bar{\nu}_a P_L s_x = \bar{\nu}_a^R s_x^L$} where $\nu_a^R = \begin{pmatrix} 0 \\ \nu_a^R \end{pmatrix} s_x^L = \begin{pmatrix} s_x^L \\ 0 \end{pmatrix}\\
+\bar{\nu}_a P_L s_x = \bar{\nu}_a \begin{pmatrix} s_x^L \\ 0 \end{pmatrix} = \nu_a^{\dagger} \gamma^0 P_L s_x 
+ =\begin{pmatrix} \nu_a^{L*} & \nu_a^{R*} \end{pmatrix} \begin{pmatrix} 0 & - i \\ - i & 0 \end{pmatrix} \begin{pmatrix} s_x^{L} \\ 0 \end{pmatrix} \\
+ =-i (\nu_a^R)^{\dagger} s_x^L = \bar{\nu}_a^R s_x^L
+$
+
+
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Note:} this implies that (equation 10.30 SM book)\\
+$M_{xy} ( \bar{s}_x P_L s_y) + m_{ab} ( \bar{\nu}_a P_L \nu_b) + 2 \mu_{ax} ( \bar{\nu}_a P_L s_x) + c.c.\\
+= M_{xy} \bar{s}_x^R s_y^L + m_{ab} \bar{\nu}_a^R \nu_b^L + 2 \mu_{ax} \bar{\nu}_a^R s_x^L + c.c.\\
+c.c.$ gives terms like $\bar{\nu}^L s^R$ which is the Dirac mass term, recall $m ( \bar{\psi}_L \psi_R + \bar{\psi}_R \psi_L)$\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\begin{pmatrix} \bar{\nu}_a^R & s_x^L \end{pmatrix}^{\dagger} = s_x^{L \dagger} (\bar{\nu}_a^R)^{\dagger} = s_x^{L \dagger} \gamma^{0 \dagger} \nu_a^R = - \bar{s}_x^L \nu_a^R\\$
+since ${ \gamma^0}^{\dagger} = - \gamma^0,\,\,$ because $\gamma^0 = \begin{pmatrix} 0 & - i \\ - i & 0 \end{pmatrix}\\$
+did I do this right? isnt it supposed to give me $\bar{s}_x^L \nu_a^R$?\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+notation may be a little sloppy\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$M_{xy} ( \bar{x}_x P_L s_y) + m_{ab} (\bar{\nu}_a P_L \nu_b) + 2 \mu_{ax} \bar{\nu}_a P_L s_x + c.c.= \begin{pmatrix} \bar{\vec{\nu}}^T & \bar{\vec{s}}^T \end{pmatrix} \begin{pmatrix} m & \mu \\ \mu^T & M \end{pmatrix} \begin{pmatrix} P_L \vec{\nu} \\ P_L \vec{s} \end{pmatrix}$}\\
+$M_{xy} ( \bar{s}_x P_L s_y) + m_{ab} ( \bar{\nu}_a P_L \nu_b ) + 2 \mu_{ax} \bar{\nu}_a P_L s_x + c.c.\\
+= \bar{\vec{s}}^T M P_L \vec{s} + \bar{\vec{\nu}}^T m P_L \vec{\nu} + \bar{\vec{\nu}}^T \mu P_L \vec{s} + \bar{\vec{s}}^T \mu^T P_L \vec{\nu}\\$
+choose $\begin{pmatrix} \vec{\nu} \\ \vec{s} \end{pmatrix}$ by convention\\
+$\begin{pmatrix} \bar{\vec{\nu}}^T & \bar{\vec{s}}^T \end{pmatrix} \begin{pmatrix} m & \mu \\ \mu^T & M \end{pmatrix} \begin{pmatrix} P_L \vec{\nu} \\ P_L \vec{s} \end{pmatrix}$\\
+\underline{Note:} $\bar{\vec{\nu}}^T \mu \vec{s} = \bar{\vec{s}}^T \mu^T \vec{\nu}$\\
+easy to see when written this way $\vec{x}^T A \vec{y} = ( \vec{x}^T A \vec{y})^T = \vec{y}^T A^T \vec{x}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\frac{i g_2}{\sqrt{2}} W_{\mu}^+ \bar{\nu}_m' \gamma^{\mu} P_L e_m'$} ($e_m', \nu_m'$ mass eigenstates (standard model))\\
+\underline{recall:} $\mathcal{L}_{SM} \supset \frac{i g_2}{\sqrt{2}} W_{\mu}^+ \bar{\nu}_m \gamma^{\mu} P_L e_m\\$
+transform into mass eigenstates, i.e. $e_m = U_{mn}^{(e)} e_n'\\$
+since neutrinos are massless in SM we can choose $\nu_m$ to transform in the same way, i.e. $\nu_m = U_{mn}^{(e)} \nu_n'\\$
+(Why does $\bar{\vec{\nu}} = \bar{\vec{\nu}}\,' U^{\dagger} \gamma^0$? I thought the bar operator only acts on spinors, If this operation is true can we say $U^{\dagger} \gamma^0 = \gamma^0 U^{\dagger}$? Why?)\\
+$\bar{\nu}_m \gamma^{\mu} P_L e_m = \bar{\vec{\nu}} \gamma^{\mu} P_L \vec{e} = \bar{\vec{\nu}}\,' U^{\dagger} \gamma^{\mu} P_L U \vec{e}\,' = \bar{\vec{\nu}}\,' \gamma^{\mu} U^{\dagger} U P_L \vec{e}\,'= \bar{\nu}_m' \gamma^{\mu} P_L e_m'\\
+\therefore \frac{i g_2}{\sqrt{2}} W_{\mu}^+ \bar{\nu}_m \gamma^{\mu} P_L e_m = \frac{i g_2}{\sqrt{2}} W_{\mu}^+ \bar{\nu}_m' \gamma^{\mu} P_L e_m'\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\mathcal{L}_{cc} = \frac{i g V_{a i}}{\sqrt{2}} W_{\mu} ( \bar{\ell}_a \gamma^{\mu} \gamma_L \nu_i)$} (Charge- current interaction)\\
+\underline{recall:} $\mathcal{L} \supset \frac{i g_2}{\sqrt{2}} W_{\mu}^+ \bar{\nu}_m \gamma^{\mu} P_L e_m$\\
+analogously for the neutrino we have\\
+$\mathcal{L}_{cc} = \frac{i g}{\sqrt{2}} W_{\mu} ( \bar{\ell}_a' \gamma^{\mu} \gamma_L \nu_a')\\
+\ell_a', \nu_i'$ are not mass eigenstates\\
+$\ell_a' = U_{an}^{(\ell)} \ell_n;\,\, \nu_a = U_{am}^{(\nu)} \nu_m\\$
+\underline{Note:} $\ell_a'^{\dagger} = (U \vec{\ell})_a = \ell_b^{\dagger} (U^{\dagger})_{ba}\\
+\implies \bar{\ell}_a' \gamma^{\mu} \gamma_L \nu_a' = \bar{\ell}_b ( {U^{(\ell)}}^{\dagger})_{ba} U_{am}^{(\nu)} \gamma^{\mu} \gamma_L \nu_m\\
+(U^{(\ell)})^{\dagger}_{ba} U_{am}^{(\nu)} = ({U^{(\ell)}}^{\dagger} U^{(\nu)})_{bm} \equiv V_{bm}\\
+\implies \bar{\ell}_a' \gamma^{\mu} \gamma_L \nu_a' = V_{bm} \bar{\ell}_b \gamma^{\mu} \gamma_L \nu_m = V_{ai} \bar{\ell}_a \gamma^{\mu} \gamma_L \nu_i\\
+\therefore \frac{ig}{\sqrt{2}} W_{\mu} ( \bar{\ell}'_a \gamma^{\mu} \gamma_L \nu_a') = \frac{i g V_{ai}}{\sqrt{2}} W_{\mu} ( \bar{\ell}_a \gamma^{\mu} \gamma_L \nu_i)$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\lambda_+ = B,\,\, \lambda_- = - \frac{M^2}{B},\,\, \begin{cases} \chi' = \chi - \frac{M}{B} \eta \\ \eta ' =  \frac{M}{B} \chi + \eta \end{cases}$} ($B>>M)$\\
+(See-saw mechanism warm-up)\\
+$\mathcal{L} = \frac{1}{2} \begin{pmatrix} \chi & \eta \end{pmatrix} \begin{pmatrix} 0 & M \\ M & B \end{pmatrix} \begin{pmatrix} \chi \\ \eta \end{pmatrix} = \frac{1}{2} \vec{\chi}^T M' \vec{\chi}\\$
+\underline{recall:} $M' = P M P^{-1} (M \sim diagonal)\\
+v_i \sim$ eigenvectors of $M'\\
+P = ( v_1 v_2)\\
+\text{Eigenvectors} [ P ] \implies v_1 = ( - \frac{B + \sqrt{B^2 + 4 M^2}}{2M}, 1) \approx ( - \frac{B}{M}, 1)\\
+v_2 = ( - \frac{B - \sqrt{B^2 + 4 M^2}}{2M}, 1) \approx ( - \frac{B - (1+ 2 \frac{M^2}{B^2})B}{2M}, 1)\\
+= ( - \frac{B - B - 2 \frac{M^2}{B}}{2M}, 1)= ( \frac{M}{B}, 1)\\
+\implies P = ( v_1, v_2 = \begin{pmatrix} - \frac{B}{M} & 1 \\ \frac{M}{B} & 1 \end{pmatrix}\\$
+lets make this more symmetric, instead take\\
+$v_1 \rightarrow \frac{v_1}{- \frac{B}{M}} = (1, - \frac{M}{B})\\
+\implies P = \begin{pmatrix} 1 &  \frac{M}{B}\\ -\frac{M}{B} & 1 \end{pmatrix}\\
+\implies \vec{\chi}^T M' \vec{\chi} = \vec{\chi}^T P M P^{-1} \vec{\chi},\,\, Assume P^{-1} \approx P^{\dagger}\\
+\vec{\chi}' = \begin{pmatrix} \chi' \\ \eta ' \end{pmatrix} = P^{\dagger} \vec{\chi} = \begin{pmatrix} -\frac{M}{B} \eta + \chi \\ \eta + \frac{M}{B} \chi \end{pmatrix}\\
+\implies \begin{cases} \chi' = \chi - \frac{M}{B} \eta \\ \eta' = \eta = \eta + \frac{M}{B} \chi \end{cases}\\
+\text{Eigenvalues} [ M' ] = ( \frac{1}{2} ( B - \sqrt{B^2 + 4 M^2}), \frac{1}{2}( B + \sqrt{ B^2 + 4 M^2}))\\
+\approx ( \frac{1}{2}( B - B( 1+ 2 ( \frac{M}{B})^2),\,\, \frac{1}{2} ( B + B))\\
+= ( - \frac{M^2}{B}, B) \implies \lambda_+ = B,\,\, \lambda_- = - \frac{M^2}{B}\\$
+Check $M' = P M P^{-1} \implies P^{\dagger} M' P = M\\
+\implies M = \begin{pmatrix} - \frac{M^2}{B} & - \frac{M^3}{B^2} \\ - \frac{M^3}{B^2} & B \end{pmatrix} \approx \begin{pmatrix} - \frac{M^2}{B} & 0 \\ 0 & B \end{pmatrix}\\
+= \begin{pmatrix} \lambda_- & 0 \\ 0 & \lambda_+ \end{pmatrix}\\$
+also check $P^{\dagger}\approx P^{-1}\\
+P^{-1} = \begin{pmatrix} \frac{1}{1+ ( \frac{M}{B})^2} & - \frac{M}{B(1+ ( \frac{M}{B})^2)} \\ \frac{M}{B(12+ ( \frac{M}{B})^2)} & \frac{1}{1+(  \frac{M}{B})^2} \end{pmatrix} \approx \begin{pmatrix} 1 & - \frac{M}{B} \\ \frac{M}{B} & 1 \end{pmatrix}\\
+P^{\dagger} = P^T = \begin{pmatrix} 1 & - \frac{M}{B} \\ \frac{M}{B} & 1 \end{pmatrix}\\
+\therefore P^{\dagger} = P^{-1}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$U_{\alpha I} = \frac{F_{\alpha I} v}{M_I}$}\\
+\underline{recall:} $\begin{pmatrix} \bar{\vec{\mu}} & \bar{\vec{s}} \end{pmatrix} \begin{pmatrix} m & \mu \\ \mu^T & M \end{pmatrix} \begin{pmatrix} P_L \vec{s} \\ P_L \vec{\nu} \end{pmatrix},\,\, m \approx 0 ,\,\, M >> \mu $(eigenvalues are)\\
+$\implies \bar{\vec{\nu}}^T \mathcal{M}' \vec{\nu} = \bar{\vec{\nu}}^T P \mathcal{M} P^{-1} \vec{\nu}\\
+\text{Eigenvectors}[ \mathcal{M}' ] \approx ( - \frac{M}{\mu^T}, 1) , ( \frac{\mu}{M}, 1)\\
+\approx (1, - M^{-1} \mu^T),\,\, ( \mu M^{-1}, 1)\\
+\implies P = \begin{pmatrix} 1 & \mu M^{-1} \\ - M^{-1} \mu^T & 1 \end{pmatrix} = \begin{pmatrix} 1 & U \\ - U^T & 1 \end{pmatrix}\\
+\implies \begin{pmatrix} 1 & - \mu M^{-1} \\ M^{-1} \mu^T & 1 \end{pmatrix} = P^{\dagger}\\
+\implies P^{\dagger} \vec{\nu} = \begin{pmatrix} 1 & - U \\ U^T & 1 \end{pmatrix} \begin{pmatrix} \vec{ \nu} \\ \vec{s} \end{pmatrix} = \begin{pmatrix} \vec{\nu} - U \vec{s} \\ U^T \vec{\nu} + \vec{s} \end{pmatrix}\\$
+mixing w/ $\vec{s}$ given by $U\\
+\therefore U_{\alpha I} = ( \mu M^{-1})_{\alpha I} = \frac{F_{\alpha I} v}{M_I}$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\mathcal{P}^{\text{det}}_{N} = ( e^{- L_{min} /\bar{d}} - e^{- L_{max}/\bar{d}}) \Theta(R - \tan \theta_N L_{max} ) \approx \frac{\Delta}{\bar{d}} \Theta (R - \tan \theta_N L_{max})$}\\
+\underline{recall:} $N(t) = N_0 e^{- t/\tau}$ (number of particles after time t)\\
+$N_{decay} (t) = N_0 (1- e^{-t/\tau})\\
+\tau, t$ in lab frame;$\,\, \tau = \gamma \tau_N, \frac{L}{t} = \beta c \implies \frac{L}{\beta c} = t\\
+N_{decay} (L) = N_0 (1-e^{-L/\bar{d}})$ where $\bar{d} = \gamma \beta c \tau_N$\\
+this is the number that would decay in length L, the number that would decay within detector length $(L_{min}, L_{max})$ is \\
+$N_{decay} (L_{max} ) -  N_{decay} (L_{min})\\
+N_0 ( e^{- L_{min}/\bar{d}} - e^{- L_{max}/\bar{d}})\\
+\implies \mathcal{P}^{det}_N = e^{- L_{min}/\bar{d}} - e^{-L_{max}/\bar{d}}\\$
+but we need the probability that it will decay within the detector so we must have $R> L_{max} \tan \theta_N\\
+\therefore \mathcal{P}_N^{det} = (e^{- L_{min}/\bar{d}} - e^{-L_{Max}/\bar{d}} ) \Theta(R- L_{max} \tan \theta_N)\\
+\approx (1- \frac{L_{min}}{\bar{d}} - 1 + \frac{L_{max}}{\bar{d}}) \Theta\\
+= \frac{\Delta}{\bar{d}} \Theta( R - L_{max} \tan \theta_N)$
+
+
+
+
+
+
+
+
+\section*{Standard Model Notes}
+
+$\mathcal{L}_{SM} = - \frac{1}{4} G^{\alpha}_{\mu \nu} G^{\alpha \mu \nu} - \frac{1}{4} W^{a \mu \nu} W^a_{\mu \nu} - \frac{1}{4} B_{\mu \nu} B^{\mu \nu} - \frac{g_3^2 \Theta_3}{64 \pi^2} \epsilon_{\mu \nu \lambda \rho} G^{\alpha \mu \nu} G^{\alpha \lambda \rho} - \frac{g_2^2 \Theta_2}{64 \pi^2} \epsilon_{\mu \nu \lambda \rho} W^{a \mu \nu} W^{a \lambda \rho} - \frac{g_1^2 \Theta_1}{64 \pi^2} \epsilon_{\mu \nu \lambda \rho} B^{\mu \nu} B^{\lambda \rho} - \frac{1}{2} \bar{L}_m \slashed{D} L_m - \frac{1}{2} \bar{E}_m \slashed{D} E_m - \frac{1}{2} \bar{Q}_m \slashed{D} Q_m - \frac{1}{2} \bar{U}_m \slashed{D} U_m - \frac{1}{2}\bar{D}_m \slashed{D} D_m - ( D_{\mu} \phi)^{\dagger}( D^{\mu} \phi) - V(\phi^{\dagger} \phi)
+- ( f_{mn} \bar{L}_m P_R E_n \phi + H_{mn} \bar{Q}_m P_R D_m \phi + g_{mn} \bar{Q}_m P_R U_n \tilde{\phi} + h.c.)\\$
+where,
+$V(\phi^{\dagger} \phi) = \lambda( \phi^{\dagger} \phi)^2 - \mu^2 \phi^{\dagger} \phi + \mu^4/4 \lambda\\$
+\underline{Note:} $ \Theta_1, \Theta_2$ have no physical effects for reasons I don't understand; $\Theta_3< 10^{-9}$ from experiment
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+$\mathcal{L}_{Higgs} = - ( D_{\mu} \phi)^{\dagger}( D^{\mu} \phi) - V(\phi^{\dagger} \phi)\\
+- ( f_{mn} \bar{L}_m P_R E_n \phi + H_{mn} \bar{Q}_m P_R D_m \phi + g_{mn} \bar{Q}_m P_R U_n \tilde{\phi} + h.c.)\\
+V(\phi^{\dagger} \phi) = \lambda( \phi^{\dagger} \phi)^2 - \mu^2 \phi^{\dagger} \phi + \mu^4/4 \lambda\\$
+Use $SU(2)$ symmetry to rotate $\phi$ so that $\phi = \begin{pmatrix} 0 \\ \frac{1}{\sqrt{2}} ( v + H(x)) \end{pmatrix} v, H(x) \in \mathbb{R}\\$
+doesn't this mean that we must also rotate all of the other fields too?\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$-(D_{\mu} \phi)^{\dagger} ( D_{\mu} \phi)= - \frac{1}{2} \partial^{\mu} H \partial_{\mu} H - \frac{1}{8} ( v+ H)^2 g_2^2 ( W^{1 \mu} - i W_{\mu}^2 )( W^{1 \mu} + i W^{2 \mu}) - \frac{1}{8} (v + H)^2 (- g_2 W^{3 \mu} + g_1 B^{\mu})(- g_2 W_{3 \mu} + g_1 B_{\mu})$}\\
+$D_{\mu} \phi = \partial_{\mu} \phi - \frac{i}{2} g_2 W_{\mu}^a \tau_a \phi - \frac{i}{2} g_1 B_{\mu} \phi\\
+= \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ \partial_{\mu} H \end{pmatrix} - \frac{i}{2 \sqrt{2}} g_2 W_{\mu}^a \tau_a \begin{pmatrix} 0 \\ \phi_0 \end{pmatrix} - \frac{i}{2 \sqrt{2}} g_1 B_{\mu} \begin{pmatrix} 0 \\ \phi_0 \end{pmatrix}\\
+\phi_0 \approx v + H(x)\\
+\tau_1 = \begin{pmatrix} 0 & 1 \\ 1 & 0 \end{pmatrix},\,\, \tau_2 = \begin{pmatrix} 0 & -i \\ i & 0 \end{pmatrix},\,\, \tau_3 = \begin{pmatrix} 1 & 0 \\ 0 & -1 \end{pmatrix}\\$
+expanding $W_{\mu}^a \tau_a (a 2 \times 2$ matrix)\\
+we obtain (mathematica)\\
+$\implies D_{\mu} \phi = \frac{1}{\sqrt{2}} \begin{pmatrix} 0 \\ \partial_{\mu} H \end{pmatrix} - \frac{i}{2 \sqrt{2}} \begin{pmatrix} g_2 W_{\mu}^3 + g_1 B_{\mu} & g_2 W_{\mu}^1 - i g_2 W_{\mu}^2 \\ g_2 W_{\mu}^1 + i g_2 W_{\mu}^2 & - g_2 W_{\mu}^3 + g_1 B_{\mu} \end{pmatrix} \begin{pmatrix} 0 \\ v + H \end{pmatrix}\\
+-( D_{\mu} \phi)^{\dagger} ( D_{\mu} \phi) = Conjugate[Dphi].Conjugate[Dphi]$ (see perturbative spectrum 'mathematica' file)\\
+$= - \frac{1}{8} g_2^2 (v+ H)^2 ( W^{1 \mu} + i W^{2 \mu})(W_{\mu}^1 - i W_{\mu}^2)\\
+- \frac{1}{8} ( - i)( v+ H) (B^{\mu} g_1 - g_2 W^{3 \mu})(2 \partial_{\mu} H + i ( v+ H)(B_{\mu} g_1 - g_2 W_{\mu}^3))\\
+- \frac{1}{8} (2 \partial^{\mu} H + i ( v+ H)(B^{\mu} g_1 - g_2 W^{3 \mu})\\
+= - \frac{1}{8} g_2^2 (v+ H)^2 (W^{1 \mu} + i W^{2 \mu})(W_{\mu}^1 - i W_{\mu}^2)\\
+- \frac{1}{8} ( - i) ( v+ H)(B^{\mu} g_1 - g_2 W^{3 \mu})(2 \partial_{\mu} H)\\
+- \frac{1}{8} ( v+ H)^2 ( B^{\mu} g_1 - g_2 W^{3 \mu})(B_{\mu} g_1 - g_2 W^3_{\mu})\\
+- \frac{1}{8} i ( v+ H)(B^{\mu} g_1 - g_2 W^{3 \mu})(2 \partial_{\mu} H)\\
+= - \frac{1}{2 } \partial^{\mu} H \partial_{\mu} H - \frac{1}{8} ( v+ H)^2 g_2^2 ( W^{1 \mu} - i W_{\mu}^2)(W^{1 \mu} + i W^{2 \mu})\\
+- \frac{1}{8} ( v+ H)^2 (- g_2 W^{3 \mu} + g_1 B^{\mu})(- g_2 W_{3 \mu} + g_1 B_{\mu})\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$V = \lambda v^2 H^2 + \lambda v H^3 + \frac{\lambda}{4} H^4$}\\
+\underline{recall:} $V(\phi^{\dagger} \phi) = \lambda [ \phi^{\dagger} \phi - \frac{ \mu^2}{2 \lambda}]^2\\
+\phi = \begin{pmatrix} 0 \\ \frac{1}{\sqrt{2}} ( v+ H(x)) \end{pmatrix};\,\, v^2 = \frac{\mu^2}{\lambda}\\
+\implies V( \phi^{\dagger} \phi) = \lambda( \frac{1}{2} ( v+ H)^2 - \frac{\mu^2}{2 \lambda})^2\\
+= \frac{\lambda}{4} [ ( v+ H)^2 - \frac{\mu^2}{\lambda}]^2\\
+= \frac{\lambda}{4} [ v^2 + H^2 + 2 v H - v^2 ]^2\\
+= \frac{\lambda}{4 } [ 2 v H + H^2]^2\\
+= \lambda v^2 H^2 + \lambda v H^3 + \frac{\lambda}{4} H^4\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\bar{L}_m P_R E_n \phi = \frac{1}{\sqrt{2}} ( v+ H) \bar{\mathcal{E}}_m P_R E_n$}\\
+\underline{$P_L L_m = \begin{pmatrix} P_L \nu_m \\ P_L \mathcal{E}_m \end{pmatrix} \sim (1,2, - \frac{1}{2}) = (SU(3), SU(2), U(1))$}\\
+$P_R E_m \sim right handed electreon \sim (1,1,-1)\\
+\bar{L}_m P_R E_n \phi = \frac{1}{\sqrt{2}} \begin{pmatrix} \bar{\nu}_m & \bar{\mathcal{E}} \end{pmatrix} P_R E_n \begin{pmatrix} 0 \\ v + H \end{pmatrix}\\
+= \frac{1}{\sqrt{2}} \bar{\mathcal{E}}_m P_R E_n (v+H) = \frac{1}{\sqrt{2}} (v+H) \bar{\mathcal{E}}_m P_R E_n\\
+$
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\bar{Q}_m P_R U_n \tilde{\phi} = \frac{1}{\sqrt{2}} (v+H) \bar{\mathcal{U}}_m P_R U_n$}\\
+\underline{recall:} $P_L Q_m = \begin{pmatrix} P_L \mathcal{U}_m \\ P_L \mathcal{D}_m \end{pmatrix} \sim ( 3,2 , \frac{1}{6})\\$
+this is like an up and down quark\\
+$P_R U_m \sim (3,1 , 2/3);\,\, \tilde{\phi} = \mathcal{E} \phi^*\\$
+\underline{Note:} $P_L U_m \sim ( \bar{3}, 1, - \frac{2}{3})\\
+\implies \bar{Q}_m P_R U_n \tilde{\phi} = \frac{1}{\sqrt{2}} \begin{pmatrix} \bar{\mathcal{U}}_m \\ \bar{\mathcal{D}}_m \end{pmatrix}^T P_R U_n \begin{pmatrix} v + H \\ 0 \end{pmatrix}\\
+= \frac{1}{\sqrt{2}} (v+ H) \bar{\mathcal{U}}_m P_R U_n\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$M_1^2 = M_2^2 = \frac{g_2^2 v^2}{4}$} (spin $1 W_{\mu}^1,\,\, W^2_{\mu}$ masses)\\
+relevant terms are \\
+$- \frac{1}{8} g_2^2 v^2 | W_{\mu}^1 - i W_{\mu}^2 |^2\\
+= - \frac{1}{8} g_2^2 v^2 W_{\mu}^1 W^{1 \mu} - \frac{1}{8} g_2^2 v^2 W_{\mu}^2 W^{2 \mu}\\
+\frac{1}{2} M_1^2 = \frac{1}{2} M_2^2 = \frac{1}{8} g_2^2 v^2\\
+\implies M_1^2 = M_2^2 = \frac{1}{4} g_2^2 v^2\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$M_W = M_1 = M_2 = \frac{g_2 v}{2}$}\\
+It's no coinidence that $M_1 = M_2$ \\
+lets choose a new basis $W_{\mu}^{\pm} = \frac{1}{\sqrt{2}} (W_{\mu}^1 \mp i W_{\mu}^2)\\
+\implies - \frac{1}{8} g_2^2 v^2 | W_{\mu}^1 - i W_{\mu}^2|^2 = - \frac{1}{4} g_2^2 v^2 W_{\mu}^+ W^{- \mu}\\$
+compare w/ $- M_W^2 W_{\mu}^+ W^{- \mu}\\
+\therefore M_W = \frac{g_2 v}{2}\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$M_A^2 = 0,\,\, M_Z^2 = \frac{1}{4} (g_1^2 + g_2^2) v^2$}\\
+want to find relevant masses for $B_{\mu},\,\, W^3_{\mu};\,\,$ relevant terms are\\
+$- \frac{1}{8} v^2 (- g_2 W_{\mu}^3 + g_1 B_{\mu})^2\\
+\implies$ mass eigenstate is $Z_{\mu}^1 = - g_2 W_{\mu}^3 + g_1 B_{\mu}\\$
+now just normalize $\implies Z_{\mu} = A^2 Z'\\
+\implies | Z_{\mu} | = A^2 (g_1^2 + g_2^2 ) = 1 \implies A = \frac{1}{\sqrt{g_1^2 + g_2^2}}\\
+\therefore Z_{\mu} = \frac{- g_1 B_{\mu} + g_2 W_{\mu}^2}{\sqrt{g_1^2 + g_2^2}}$ (I think negative, so that kinetic term doesn't change)\\
+$\implies - \frac{1}{8} v^2 (g_1^2 + g_2^2) Z_{\mu} Z^{\mu} \implies M_{Z}^2 = \frac{1}{4} ( g_1^2 + g_2^2) v^2\\$
+define $\cos \theta_W = \frac{g_2}{\sqrt{g_1^2 + g_2^2}};\,\, \sin \theta_W = \frac{g_1}{\sqrt{g_1^2 + g_2^2}}\\$
+the field that is orthogonal to $Z_{\mu}$ is\\
+$A_{\mu} = W_{\mu}^3 \sin \theta_W + B_{\mu} \cos \theta_W$ (verify)\\
+$= \frac{g_1 W_{\mu}^3 + g_2 B_{\mu}}{\sqrt{g_1^2 + g_2^2}}\\
+A_{\mu}$ is massless
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\mathcal{L}_{Higgs} == - \frac{1}{2} \partial_{\mu} H \partial^{\mu} H - \lambda v^2 H^2 - \lambda v H^3 - \frac{\lambda}{4} H^4$}
+\underline{$- \frac{1}{8} g_2^2 (v+ H)^2 | W_{\mu}^2 - i W_{\mu}^2 |^2$}\\
+\underline{$- \frac{1}{8}  (v+H)^2 ( - g_2 W_{\mu}^3 + g_1 B_{\mu})^2$}\\
+\underline{$- \frac{1}{\sqrt{2}} (v+ H) [ f_{mn} \bar{\mathcal{E}}_m P_R E_n + h.c.]$}\\
+\underline{$- \frac{12}{\sqrt{2}} (v+ H) [ g_{mn} \bar{\mathcal{U}}_m P_R U_n + h.c.]$}\\
+\underline{$- \frac{1}{\sqrt{2}} (v+ H) [ h_{mn} \bar{\mathcal{D}}_m P_R D_n + h.c.$]
+ }\\
+\underline{recall:} $\mathcal{L}_{Higgs} = - ( D_{\mu} \phi)^{\dagger}(D^{\mu} \phi) - V(\phi^{\dagger} \phi)\\
+- (f_{mn} \bar{L}_m P_R E_n \phi + h_{mn} \bar{Q}_m P_R D_n \phi + g_{mn} \bar{Q}_m P_R U_n \tilde{\phi} + h.c.);\,\, V(\phi^{\dagger} \phi) = \lambda (\phi^{\dagger} \phi)^2 - \mu^2 \phi^{\dagger} \phi + \mu^4 /4 \lambda\\$
+combine these with previous results for each of the terms in $\mathcal{L}_{Higgs}\\
+\therefore \mathcal{L}_{Higgs} = -\frac{1}{2} \partial_{\mu} H \partial^{\mu} H - \lambda v^2 H^2 - \lambda v H^3 - \frac{\lambda}{4} H^4\\
+- \frac{1}{8} g_2^2 (v+ H)^2 | W_{\mu}^2 - i W_{\mu}^2 |^2\\
+- \frac{1}{8}  (v+H)^2 ( - g_2 W_{\mu}^3 + g_1 B_{\mu})^2\\
+- \frac{1}{\sqrt{2}} (v+ H) [ f_{mn} \bar{\mathcal{E}}_m P_R E_n + h.c.]\\
+- \frac{12}{\sqrt{2}} (v+ H) [ g_{mn} \bar{\mathcal{U}}_m P_R U_n + h.c.]\\
+- \frac{1}{\sqrt{2}} (v+ H) [ h_{mn} \bar{\mathcal{D}}_m P_R D_n + h.c.]\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$m_H^2 = 2 \mu^2$} (spin-0)\\
+\underline{recall:}$ \mathcal{L}_{Higgs} \supset -\frac{1}{2} \partial_{\mu} H \partial^{\mu} H - \lambda v^2 H^2\\$
+compare with $\frac{1}{2} \partial_{\mu} \phi \partial^{\mu} \phi - \frac{1}{2} m^2 \phi^2\\$
+(I don't understand negative sign)\\
+$\implies \frac{1}{2} m_H^2  \lambda v^2 \implies m_H^2 = 2 \lambda v^2\\$
+\underline{recall:} $\lambda v^2 = \mu^2$ (need to derive)\\
+$\therefore m_H^2 = 2 \mu^2$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$m_n^{(e)} = \frac{1}{\sqrt{2}} f_n v;\,\, m_n^{(u)} = \frac{1}{\sqrt{2}} g_n cv;\,\, m_n^{(d)} = \frac{1}{\sqrt{2}} h_n v$}\\
+relevant terms are,\\
+$\mathcal{L} = - \frac{v}{\sqrt{2}} [ f_{mn} \bar{\mathcal{E}}_m P_R E_n + g_{mn} \bar{\mathcal{U}}_m P_R U_n + h_{mn} \bar{\mathcal{D}}_m P_R D_n + h.c.]\\$
+we want to diagonalize these terms\\
+$\implies \begin{cases}  P_L \mathcal{E}_m = U_{mn}^{(e)} P_L \mathcal{E}_n',\,\, P_R E_m = V_{mn}^{(e)} P_R E_n'\end{cases}
+P_L \mathcal{U}_m = U_{mn}^{(u)} P_L \mathcal{U}_n ',\,\, P_R U_m = V_{mn}^{(u)} P_R U_n'\\
+P_L \mathcal{D}_m = U_{mn}^{(d)} P_L \mathcal{D}_n',\,\, P_R D_n = V_{mn}^{*(d)} P_R D_n'\\$
+each of these matrices are unitary\\
+can always choose $U^{(e)} = V^{(e)*};\,\, U^{(u)} = V^{(u)*};\,\, U^{(d)} = V^{(d)*}\\$
+choose them so that\\
+$U^{(e) \dagger} f V^{(e)} = V^{(e) T} fV^{(e)} = \text{diag} (f_e, f_{\mu}, f_{\tau})\\$
+plug in and drop primes\\
+$\implies \mathcal{L} = - \frac{1}{\sqrt{2}} v [ f_m \bar{\mathcal{E}}_m P_R E_m + g_m \bar{\mathcal{U}}_m P_R U_m + h_m \bar{\mathcal{D}}_m P_R D_m + h.c.]\\$
+define\\
+$e_m \equiv P_L \mathcal{E}_m + P_R E_m\\
+d_m \equiv P_L \mathcal{D}_m + P_R D_m\\
+u_m \equiv P_L \mathcal{U}_m + P_R U_m\\$
+\underline{recall:} $\bar{e}_m e_m = \bar{\mathcal{E}}_m P_r E_m + h.c.\\
+\therefore \mathcal{L} = - \frac{1}{\sqrt{2}} v (f_m \bar{e}_m e_m + g_m \bar{u}_m u_m + h_m \bar{d}_m d_m)\\
+\therefore m_n^{(e)} = \frac{1}{\sqrt{2}} f_n v,\,\, m_n^{(u)} = \frac{1}{\sqrt{2}} g_n v,\,\, m_n^{(d)} = \frac{1}{\sqrt{2}} h_n v\\$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\bar{e}_m e_m = \bar{\mathcal{E}}_m P_R E_m + h.c.$}\\
+\underline{recall:} $e_m = P_L \mathcal{E}_m + P_R E_m;\,\, P_L = \frac{1}{2}(1+ \gamma_5);\,\, P_R = \frac{1}{2}(1- \gamma_5); \gamma_5^{\dagger} = \gamma_5;\,\, \bar{e}_m e_m =e_m^{\dagger} \gamma^0 e_m = ( \mathcal{E}_m^{\dagger} P_L^{\dagger} + E_m^{\dagger} P_R^{\dagger}) \gamma^0 (P_L \mathcal{E}_m + P_R E_m)\\
+=( \mathcal{E}_m^{\dagger} P_L \gamma^0 + E)_m^{\dagger} P_R \gamma^0)(P_L \mathcal{E}_m + P_R E_m)\\
+= ( \bar{\mathcal{E}_m P_R + \bar{E}_m P_L)(P_L \mathcal{E}_m + P_R E_m)\\
+= \mathcal{E}_m P_R P_L \mathcal{E}_m + \bar{\mathcal{E}}_m P_R^2 E_m + \bar{E}_m P_L^2 \mathcal{E}_m + \bar{E}_m P_L P_R E_m\\
+= \bar{\mathcal{E}}_m P_R^2 E_m + \bar[E}_m P_L^2 \mathcal{E}_m\\
+= \bar{\mathcal{E}}_M P_R E_m + \bar{E}_m P_L \mathcal{E}_m = \bar{E}_m P_R E_m + h.c.\\$
+where we used\\
+$\gamma_5 = \begin{pmatrix} 0 & 1 \\ -1 & 0 \end{pmatrix};\,\, \gamma_5  \gamma^0 = - \gamma^0 \gamma_5;\,\, P_L^2 = P_L;\,\, P_R^2 = P_R;\,\, P_L P_R = P_R P_L = 0$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Higgs interactions}\\
+\underline{recall:} $\mathcal{L}_{Higgs} = \sim$ bla bla\\
+\underline{Higgs couplings}\\
+$\implies \mathcal{L}_{H-H} = - \lambda v H^3 - \frac{1}{4} \lambda H^4 = - \frac{m_H^2}{2 v} H^3 - \frac{m_H^2}{8 v^2} H^4\\$
+\underline{Higgs-gauge boson couplings}\\
+$\mathcal{L}_{H-g} = - \frac{1}{2} g_2^2 ( 2 v H + H^2 ) | W_{\mu}^1 - i W_{\mu}^2|^2\\
+- \frac{1}{8} (2 v H + H^2)(- g_2 W_{\mu}^3 + g_1 B_{\mu})^2\\
+= - ( \frac{H}{v} + \frac{H^2}{2 v^2})(2 M_W^2 W_{\mu}^+ W^{- \mu} + M_{Z}^2 Z_{\mu} Z^{\mu})\\$
+\underline{Higgs-fermion couplings}\\
+$\mathcal{L}_{H-f} = - \frac{1}{\sqrt{2}} H( f_{mn} \bar{\mathcal{E}}_m P_R E_n + g_{mn} \bar{\mathcal{U}}_m P_R U_n + H_{mn} \bar{\mathcal{D}}_m P_R D_n)\\
+= - \frac{1}{\sqrt{2}} H ( f_m \bar{e}_m e_m + g)_m \bar{u}_m u_m + h_m \bar{d}_m d_m)\\
+= - \sum_f \frac{m_f}{v} \bar{f} f H$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\mathcal{L}_{cc} = \frac{i g_2}{\sqrt{2}} [ W_{\mu}^+ ( \bar{\nu}_m \gamma^{\mu} P_L e_m + \bar{u}_m \gamma^{\mu} P_L d_m ) + W_{\mu}^- ( \bar{e}_m \gamma^{\mu} P_L \nu_m + \bar{d}_m \gamma^{\mu} P_L u_m)]$}\\
+\underline{recall:} $\mathcal{L} = - \frac{1}{2} \bar{L}_m \slashed{D} L_m - \frac{1}{2} \bar{E}_m \slashed{D} E_m - \frac{1}{2} \bar{Q}_m \slashed{D} Q_m - \frac{1}{2} \bar{U}_m \slashed{D} U_m - \frac{1}{2} \bar{D}_m \slashed{D} D_m;\\
+D_{\mu} L_m = \partial_{\mu} L_m + [ \frac{i}{2} g_1 B_{\mu} - \frac{i}{2} g_2 W_{\mu}^a \tau_a] P_L L_m\\
++ [ - \frac{i}{2} g_1 B_{\mu} + \frac{i}{2} g_2 W_{\mu}^a \tau_a^*] P_R L_m\\
+D_{\mu} E_m = \partial_{\mu} E_m + i g_1 B_{\mu} ( P_R E_m ) - i g_1 B_{\mu} ( P_L E_m)\\
+D_{\mu} Q_m = \partial_{\mu} Q_m + [ - \frac{i}{2} g_3 G_{\mu}^{\alpha} \lambda_{\alpha} - \frac{i}{2} g_2 W_{\mu}^a \tau_a - \frac{i}{6} g_1 B_{\mu} ] P_L Q_m + [ \frac{i}{2} g_3 G_{\mu}^{\alpha} \lambda_{\alpha}^* + \frac{i}{2} g_2 W_{\mu}^a \tau_a^* + \frac{i}{6} g_1 B_{\mu} ] P_R Q_m\\
+D_{\mu} U_m = \partial_{\mu} U_m + [ - \frac{i}{2} g_3 G^{\alpha}_{\mu} \lambda_{\alpha} - \frac{2 i}{3} g_1 B_{\mu} ] P_R U_m + [ \frac{i}{2} g_3 G_{\mu}^{\alpha} \lambda_{\alpha}^* + \frac{2 i}{3} g_1 B_{\mu} ] P_L U_m\\
+D_{\mu} D_m = \partial_{\mu} D_m + [ -  \frac{i}{2} g_3 G^{\alpha}_{\mu} \lambda_{\alpha} + \frac{i}{3} g_1 B_{\mu} ] P_R D_m + [ \frac{i}{2} g_3 G_{\mu}^{\alpha} \lambda_{\alpha}^* - \frac{i}{3} g_1 B_{\mu} ] P_L D_m\\
+L_m = \begin{pmatrix} \nu_m\\ \mathcal{E}_m\end{pmatrix}; Q_m = \begin{pmatrix} \mathcal{U}_m \\ \mathcal{D}_m \end{pmatrix}$\\
+we want ew interactions so neglect SU(3) contribution of $ D_{\mu}$, also ignore kinetic terms like $\bar{E}_m \partial_{\mu} E_m$, also take only terms like $ P_L L_m$ since we can include $P_R L_m$ w/ h.c.\\
+\underline{recall:} $- \frac{i}{2} g_2 W_{\mu}^a \tau_a - \frac{i}{2} g_1 B_{\mu} = - \frac{i}{2 \sqrt{2}} \begin{pmatrix} g_2 W_{\mu}^3 + g_1 B_{\mu} & g_2 W_{\mu}^1 - i g_2 W_{\mu}^2 \\ g_2 W_{\mu}^1 + i g_2 W_{\mu}^2 & - g_2 W_{\mu}^3 + g_2 B_{\mu} \end{pmatrix}\\
+\implies \mathcal{L}_{ew} = \frac{i}{4} \begin{pmatrix} \bar{\nu}_m \\ \bar{\mathcal{E}}_m \end{pmatrix} \gamma^{\mu} P_L \begin{pmatrix} - g_1 B_{\mu} + g_2 W_{\mu}^3 & g_2 (W_{\mu}^1 - i W_{\mu}^2) \\ g_2 W_{\mu}^1 + i g_2 W_{\mu}^2 & - g_2 W_{\mu}^3 - g_1 B_{\mu} \end{pmatrix} + \frac{i}{4} \begin{pmatrix} \bar{\mathcal{U}}_m \\ \bar{\mathcal{D}}_m \end{pmatrix} \gamma^{\mu} P_L \begin{pmatrix} \frac{1}{3} g_1 B_{\mu} + g_2 W_{\mu}^3 & g_2 (W_{\mu}^1 - i W_{\mu}^2 ) \\ g_2( W_{\mu}^1 + i W_{\mu}^2) & \frac{1}{3} g_1 B_{\mu} - g_2 W_{\mu}^3 \end{pmatrix} \begin{pmatrix} \mathcal{U}_m \\ \mathcal{D}_m \end{pmatrix} + \frac{i}{3} g_1 B_{\mu} \bar{U}_m \gamma^{\mu} P_R U_m - \frac{i}{6} g_1 B_{\mu} \bar{D}_m \gamma^{\mu} P_R D_m - \frac{i}{2} g_1 B_m \bar{E}_m \gamma^{\mu} P_R E_m + h.c.$\\
+\underline{Note:} we ignore the $\sqrt{2}$ since the Higgs itself has a square root in the expression, so it gets absorbed.\\
+right now we only care about couplings between fermions and spin 1 $W_{\mu}$ particles\\
+\underline{recall:} $W_{\mu}^{\pm} = ( W_{\mu}^1 \mp i W_{\mu}^2)\\
+\implies \mathcal{L}_{ew} = \frac{\sqrt{2} i g_2}{4} \begin{pmatrix} \bar{\nu}_m \\ \bar{\mathcal{E}}_m \end{pmatrix}^T \gamma^{\mu} P_L \begin{pmatrix} \sim & W_{\mu}^+ \\ W_{\mu}^- & \sim \end{pmatrix} \begin{pmatrix} \nu_m \\ \mathcal{E}_m \end{pmatrix}\\
++ \frac{i}{4} \sqrt{2} g_2 \begin{pmatrix} \bar{\mathcal{U}}_m \\ \bar{\mathcal{D}}_m \end{pmatrix}^T \gamma^{\mu} P_L \begin{pmatrix} \sim & W_{\mu}^+ \\ W_{\mu}^- & \sim \end{pmatrix} \begin{pmatrix} \mathcal{U}_m \\ \mathcal{D}_m \end{pmatrix} + \sim\\
+= \frac{i g_2}{2 \sqrt{2}} \begin{pmatrix} \bar{\nu}_m \gamma^{\mu} P_L & \bar{\mathcal{E}}_m \gamma^{\mu} P_L \end{pmatrix} \begin{pmatrix} \sim + W_{\mu}^+ \mathcal{E}_m \\ W_{\mu}^- \nu_m + \sim \end{pmatrix}\\
++ \frac{i g_2}{2 \sqrt{2}} \begin{pmatrix} \bar{\mathcal{U}}_m \gamma^{\mu} P_L & \bar{\mathcal{D}}_m \gamma^{\mu} P_L \end{pmatrix} \begin{pmatrix} \sim + W_{\mu}^+ \mathcal{U}_m \\ W_{\mu}^- \mathcal{D}_m + \sim \end{pmatrix}\\
+= \frac{i g_2}{2 \sqrt{2}} ( \bar{\nu}_m \gamma^{\mu} P_L W_{\mu}^+ \mathcal{E}_m + \sim + \bar{\mathcal{E}}_m \gamma^{\mu} P_L. W_{\mu}^- \nu_m + \sim) + \frac{i g_2}{2 \sqrt{2}} ( \bar{\mathcal{U}}_m \gamma^{\mu} P_L W_{\mu}^+ \mathcal{U}_m + \sim + \bar{\mathcal{D}}_m \gamma^{\mu} P_L W_{\mu}^- \mathcal{D}_m + \sim)\\
+\implies \mathcal{L}_{cc}$ (charge-current interactions)\\
+$= \frac{i g_2}{2 \sqrt{2}} [ W_{\mu}^+ ( \bar{\nu}_m \gamma^{\mu} P_L \mathcal{E}_m + \bar{\mathcal{U}}_m \gamma^{\mu} P_L \mathcal{U}_m)\\
++ W_{\mu}^- ( \bar{\mathcal{E}}_m \gamma^{\mu} P_L \nu_m + \bar{\mathcal{D}}_m \gamma^{\mu} P_L \mathcal{D}_m)]\\$
+convert to mass eigenbasis\\
+\underline{recall:} $e_m = P_L \mathcal{E}_m + P_R E_m \implies P_L \mathcal{E}_m = e_m - P_R E_m;\,\, etc.\\
+\bar{\nu}_m \gamma^{\mu} P_L \mathcal{E}_m = \bar{\nu}_m \gamma^{\mu} P_L^2 \mathcal{E}_m = \bar{\nu}_m \gamma^{\mu} P_L ( e_m - P_R E_m)\\
+= \bar{\nu}_m \gamma^{\mu} P_L e_m - \bar{\nu}_m \gamma^{\mu} P_L P_R E_m = \bar{\nu}_m \gamma^{\mu} P_L e_m, same for u, d\\
+\therefore \mathcal{L}_{cc} = \frac{i g_2}{\sqrt{2}} [ W_{\mu}^+ ( \bar{\nu}_m \gamma^{\mu} P_L e_m + \bar{u}_m \gamma^{\mu} P_L d_m) + W_{\mu}^- ( \bar{e}_m \gamma^{\mu} P_L \nu_m + \bar{d}_m \gamma^{\mu} P_L u_m)]$\\
+we have an extra factor of 2 for some reason\\
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\item \underline{$\mathcal{L}_{cc} = i \frac{g_2}{2 \sqrt{2}} [ W_{\mu}^+ ( \bar{\nu}_m' \gamma^{\mu} ( 1+ \gamma_5) e_m'$}\\
+\underline{$ + V_{m n} \bar{u}_m' \gamma^{\mu} ( 1+ \gamma_5) d_n')+ W_{\mu}^- ( \bar{e}_m' \gamma^{\mu} (1+\gamma_5) \nu_m' + ( V^{\dagger})_{mn} \bar{d}_m' \gamma^{\mu} (1+ \gamma_5) u_n')$}\\
+The last expression is only correct in the generation basis, lets transform to the mass eigenbasis\\
+$\implies \begin{cases} e_m= U_{mn}^{(e)} e_n',\,\, u_m = U_{mn}^{(u)} u_n'\\
+d_m = U_{mn}^{(d)} d_n',\,\, \nu_m = U_{mn}^{(e)} \nu_n' \end{cases}\\$
+\underline{Note:} Since there is no mass term for $\nu_m$ we can choose it to transform in the same way as $e_m$\\
+\underline{Note:} $\bar{\nu}_m = \nu_m^{\dagger} \gamma^0 = ( U^{(e)} \nu')_m^{\dagger} \gamma^0 = ( \nu'^{\dagger} U^{(e) \dagger} )_m \gamma^0\\
+= \nu_n'^{\dagger} ( U^{(e) \dagger})_{nm} \gamma^0 = \nu_n'^{\dagger} \gamma^0 U_{mn}^{(e)*} = \bar{\nu}_n' U_{mn}^{(e)*}\\
+\implies W_{\mu}^{\dagger} \bar{\nu}_m \gamma^{\mu} P_L e_m = W_{\mu}^{+} \bar{\nu}'_n U^{(e)*}_{mn} U_{mk}^{(e)} \gamma^{\mu} P_L e_k'\\
+U_{mn}^{(e)*} U_{mk}^{(e)} = (U^{(e) \dagger})_{nm} U_{mk}^{(e)} = (U^{(e) \dagger} U^{(e)})_{nk} = \delta_{nk}\\
+\implies W_{\mu}^{+} \bar{\nu}_m \gamma^{\mu} P_L e_m = W_{\mu}^+ \bar{\nu}_m' \gamma^{\mu} P_L e_m'\\
+likewise \bar{u}_m \gamma^{\mu} P_L d_m = \bar{u}_n' U_{mn}^{(u)*} U_{mk}^{(d)} \gamma^{\mu} P_L d_k\\
+U^{(u)*}_{mn} U_{mk}^{(d)} = (U^{(u) \dagger} U^P{(d)})_{mn} \equiv V_{mn} (CKM matrix)\\
+V^{\dagger} V = 1\\
+\therefore \mathcal{L}_{cc} = \frac{i g_2}{\sqrt{2}} [ W_{\mu}^+ ( \bar{\nu}_m' \gamma^{\mu} P_L e_m' + V_{mn} \bar{u}_m' \gamma^{\mu} P_L d_n') + W_{\mu}^- ( \bar{e}'_m \gamma^{\mu} P_L \nu_m' + ( V^{\dagger})_{mn} \bar{d}_m' \gamma^{\mu} P_L u_n ')]$
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{Notes on Isospin}
+in early nuclear physics, physicists noticed that protons and neutrons have almost identical masses and motivated by the theory of angular momentum where you can have a spin (say 1/2) and then you can have a particle whos z component of its spin can be in a superposition of up and down spin. Likewise you can have a nucleon that is a superpostition of a proton and a neutron. It turns out that this is false, but if you go down to the lower level of quarks it becomes approximately true. You can think of up and down quarks as the states (up and down are analogous to spin up and spin down except instead of spin up being $S_z=1/2$ you get $I_3=1/2$ where I is the isospin) Is the theory of angular momentum SU(2)? Well for the up and down quark the symmetry is roughly SU(2), it is an approximate symmetry that works since the up and down quark almost have the same mass, the symmetry  becomes more broken if you add another quark, i.e. SU(3) wouldnt be a great symmetry and gets worse the more quarks you have since their masses become very different.
+
+
+\hdashrule[0.5ex][c]{\linewidth}{0.5pt}{1.5mm}
+
+
+\underline{HNL notes}\\
+$\mathcal{L} = \mathcal{L}_SM = - \frac{1}{2} A_{nm} \bar{N}_n \slashed{\partial} N_m - \frac{1}{2} M_{nm} \bar{N}_n N_m - \frac{1}{2} m_{ab} \bar{\nu}_a \nu_b - F_{am} \bar{L}_a N_m \tilde{\phi}\\
+sterile means (\slashed{D})_N = \slashed{\partial} or SU(3) \times SU(2) \times U(1) singlet\\
+can diagonalize A_{nm} \bar{N}_n \slashed{\partial} N_m and M_{nm} \bar{N}_n N_m\\
+F_{am} \bar{L}_a N_m \tilde{\phi} = F_{am} v \bar{\nu}_a N_m = \mu_{am} \bar{\nu}_a N_m\\
+\implies \mathcal{L} = \mathcal{L}_{SM} - \frac{1}{2} \bar{N}_m \slashed{\partial} N_m - \frac{1}{2} M_m \bar{N}_m N_m - \frac{1}{2} m_{ab} \bar{\nu}_a \nu_b - \mu_{am} \bar{\nu}_a N_m$\\
+work in a basis where $ \ell_a$ already diagonal (mass basis)\\
+\underline{Note:} $\mu_{am} \bar{\nu}_a N_m = \bar{\nu} \mu N = ( \bar{\nu} \mu N)^{\dagger} = ( \nu^{\dagger} \gamma^0 \mu N)^{\dagger} = N^{\dagger} \mu \gamma^0 \nu\\
+= N^{\dagger} \gamma^0 \mu \nu = \bar{N} \mu \nu\\
+\implies \bar{\nu} \mu N = \frac{1}{2} \bar{\nu} \mu N + \frac{1}{2} \bar{\nu} \mu N\\
+\implies \mathcal{L} \supset - \frac{1}{2} [ \bar{N} M N + \bar{\nu} m \nu + \bar{\nu} \mu N + \bar{N} \mu^T \nu]\\
+= - \frac{1}{2} \begin{pmatrix} \bar{|nu} & \bar{N} \end{pmatrix} \begin{pmatrix} m & \mu \\ \mu^T M \end{pmatrix} \begin{pmatrix} \nu \\ N \end{pmatrix},\,\,$ assume $m= 0$\\
+No majorana mass term for $\nu\\
+\implies - \frac{1}{2} \begin{pmatrix} \bar{\nu} & \bar{N} \end{pmatrix} \begin{pmatrix} 0 & \mu \\ \mu^T & M \end{pmatrix} \begin{pmatrix} \nu \\ N \end{pmatrix} = - \frac{1}{2} \bar{V}^T \mathcal{M} ' V\\
+diagonalize \mathcal{M} ' = P \mathcal{M} P^{-1}, assume M>> \mu\\
+P = \begin{pmatrix} v_1 & v_2 \end{pmatrix}\\
+v_1 = ( \frac{- M - \sqrt{M^2 + 4 \mu^2}}{2 \mu}, 1) \approx ( - \frac{M}{\mu} , 1)\\
+v_2 = ( - \frac{M - \sqrt{M^2 + 4 \mu^2 }}{2 \mu} , 1) \approx ( \frac{\mu}{M}, 1)\\
+P_{\text{trial}} = \begin{pmatrix} - \frac{M}{\mu} & \frac{\mu}{M} \\ 1 & 1 \end{pmatrix}\\$
+make more symmetric by $v_1 \rightarrow v_1 ( - \frac{\mu}{M})\\
+\implies P = \begin{pmatrix} 1 & \frac{\mu}{M} \\ - \frac{\mu}{M} & 1 \end{pmatrix}$ can also show $P^{-1} \approx P^{\dagger} = P^T\\$
+\underline{Note:} $P^T \begin{pmatrix} \nu \\ N \end{pmatrix} = \begin{pmatrix} 1 & - \frac{\mu}{M} \\ \frac{\mu}{M} & 1 \end{pmatrix} \begin{pmatrix} \nu \\ s \end{pmatrix} = \begin{pmatrix} \nu - \frac{\mu}{M} s \\ s + \frac{\mu}{M} \nu \end{pmatrix}\\
+= \begin{pmatrix} \nu' \\ s' \end{pmatrix} but \begin{pmatrix} \nu' \\ s' \end{pmatrix} \approx \begin{pmatrix} \nu \\ s \end{pmatrix}\\$
+interestingly $\mathcal{M}' v_1 \neq \lambda_- v_1\\$
+but $M' v_1' = \lambda_- v_1$ (not sure why)
+$\implies \begin{pmatrix} \bar{\nu}' & \bar{s}' \end{pmatrix} diag (m_1, m_2 ) \begin{pmatrix} \nu' \\ s' \end{pmatrix}\\$
+\underline{Note:} $\nu' = \nu - \mu M^{-1} s = \nu - U s\\$
+$U$ is the mixing of $s$ with $\nu\\
+\therefore U_{\alpha I} = \mu M^{-1} = \frac{\mu_{\alpha I}}{M_I} = \frac{F_{\alpha I} v}{M_I}\\$
+\underline{recall:} $- \frac{1}{2} \bar{L}_m \slashed{D} L_m = - \frac{1}{2} \bar{L}_m \gamma^{\mu} ( \partial_{\mu} + \frac{i}{2} g_1 B_{\mu} - i g_2 W_{\mu}^a \tau_a ) L_m\\
+\propto \bar{L}_m \gamma^{\mu} \begin{pmatrix} \sim & W_{\mu}^+ \\ W_{\mu}^- & \sim \end{pmatrix} L_m\\
+\implies - \frac{1}{2} \bar{L}_m \slashed{D} L_m = \frac{i g_2}{\sqrt{2}} [ W_{\mu}^+ ( \bar{\nu}_m \gamma^{\mu} e_m ) + W_{\mu}^- ( \bar{e}_m \gamma^{\mu} \nu_m)]\\$
+remember we are in a basis where $e_m$ is mass eigenstate but $\nu_m$ is not but $\nu_m = \nu' + Us\\$
+so we get terms like \\
+$\frac{i g_2}{\sqrt{2}} W_{\mu}^+ U_{m n}^* ( \bar{s}_n \gamma^{\mu} e_m )$ on top of the usual interaction terms like\\
+$\frac{i g_2}{\sqrt{2}} W_{\mu}^{+} ( \bar{\nu}_m \gamma^{\mu} e_m)$ \\
+\underline{Note:} more interactions are allowed i the case of sterile neutrinos except they are suppressed by the mixing $U$
+
+
+
+\end{enumerate}
+
+\end{document}
+
